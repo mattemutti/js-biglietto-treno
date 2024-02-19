@@ -3,9 +3,22 @@
 // - Richiedere all'utente l'età tramite un prompt
 
 const distance = Number(prompt (`Quanti km vuoi percorrere?`)); // km trasfirmati in numero
-const age = Number(prompt (`Quanti anni hai?`)); // anni trasformati i nnumero
+const age = Number(prompt (`Quanti anni hai?`)); // anni trasformati in numero
 let priceDiscount20;
 let priceDiscount40;
+
+
+
+/* Richiesta anno di nascita, ma meglio chiedere l'età in quanto conta anche il giorno e il mese per lo scatto dell'età 
+
+const date = Number(prompt (`Inserisci l'anno completo della tua nascita `)); // richiesta di inserimento anno preciso di nascita
+const currentYear = new Date();
+const year = currentYear.getFullYear(); // anno di oggi
+console.log(year);
+const age = Number((year - date));
+console.log(age);
+
+***********************************************************************************************************************/
 
 
 console.log(typeof distance, distance); // Controllo e stampa in console tipo del dato e numero digitato
