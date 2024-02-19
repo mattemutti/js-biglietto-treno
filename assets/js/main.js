@@ -1,6 +1,13 @@
 // - Richiedere all'utente i km che vuole percorrere tramite un prompt 
 // - Richiedere all'utente l'età tramite un prompt
 
+const distance = Number(prompt (`Quanti km vuoi percorrere`));
+const age = Number(prompt (`Quanti anni hai`));
+
+console.log(typeof distance);
+console.log(typeof age);
+
+
 
 // - calcolare il costo del biglietto in base ai km di percorrenza
 
