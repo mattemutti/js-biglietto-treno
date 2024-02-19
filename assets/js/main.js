@@ -2,8 +2,8 @@
 // - Richiedere all'utente i km che vuole percorrere tramite un prompt 
 // - Richiedere all'utente l'età tramite un prompt
 
-const distance = Number(prompt (`Quanti km vuoi percorrere`)); // km trasfirmati in numero
-const age = Number(prompt (`Quanti anni hai`)); // anni trasformati i nnumero
+const distance = Number(prompt (`Quanti km vuoi percorrere?`)); // km trasfirmati in numero
+const age = Number(prompt (`Quanti anni hai?`)); // anni trasformati i nnumero
 let priceDiscount20;
 let priceDiscount40;
 
@@ -26,12 +26,12 @@ console.log(typeof price, price);
 if (age < 18) {
 	priceDiscount20 = (price * 20 / 100)
 	console.log(priceDiscount20);
-	alert(`Il prezzo del tuo biglietto con lo sconto minorenni del 20% è: ` + priceDiscount20.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola
+	alert(`Il prezzo del tuo biglietto con lo sconto minorenni del 20% è: ` + priceDiscount20.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
 
 } else if (age > 64) {
 	priceDiscount40 = (price * 20 / 100)
 	console.log(priceDiscount40);
-	alert(`Il prezzo del tuo biglietto con lo sconto over 65 del 40% è: ` + priceDiscount40.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola
+	alert(`Il prezzo del tuo biglietto con lo sconto over 65 del 40% è: ` + priceDiscount40.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
 
 } else {
 	console.log(price);
