@@ -19,24 +19,27 @@ console.log(typeof price, price);
 
 
 // - controllare se il prezzo deve essere soggetto a scontistica in base all'età dell'utente
+// - Se soggetto a scontistica, applicare sconto di riferimento
+// - mandare in console il prezzo del biglietto. (Oppure con un prompt o alert)
+
 
 if (age < 18) {
 	priceDiscount20 = (price * 20 / 100)
 	console.log(priceDiscount20);
+	alert(`Il prezzo del tuo biglietto con lo sconto minorenni del 20% è: ` + priceDiscount20.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola
+
 } else if (age > 64) {
 	priceDiscount40 = (price * 20 / 100)
 	console.log(priceDiscount40);
+	alert(`Il prezzo del tuo biglietto con lo sconto over 65 del 40% è: ` + priceDiscount40.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola
+
 } else {
 	console.log(price);
+	alert(`Il prezzo del tuo biglietto è: ` + price.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola
 }
 
 
 
-// - Se soggetto a scontistica, applicare sconto di riferimento
-
-
-
-// - mandare in console il prezzo del biglietto. (Oppure con un prompt o alert)
 
 
 
