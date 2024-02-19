@@ -18,6 +18,14 @@ console.log(typeof price, price);
 
 // - controllare se il prezzo deve essere soggetto a scontistica in base all'età dell'utente
 
+if (age < 18) {
+	console.log(`sconto minorenne`);
+} else if (age > 64) {
+	console.log(`sconto over 65`);
+} else {
+	console.log(price);
+}
+
 
 
 // - Se soggetto a scontistica, applicare sconto di riferimento
