@@ -6,7 +6,8 @@ const distance = Number(prompt (`Quanti km vuoi percorrere?`)); // km trasfirmat
 const age = Number(prompt (`Quanti anni hai?`)); // anni trasformati in numero
 let priceDiscount20;
 let priceDiscount40;
-
+let discountMinor;
+let discountSenior;
 
 
 /* Richiesta anno di nascita, ma meglio chiedere l'età in quanto conta anche il giorno e il mese per lo scatto dell'età 
@@ -37,14 +38,16 @@ console.log(typeof price, price);
 
 
 if (age < 18) {
-	priceDiscount20 = (price * 20 / 100)
-	console.log(priceDiscount20);
-	alert(`Il prezzo del tuo biglietto con lo sconto minorenni del 20% è: ` + priceDiscount20.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
+	priceDiscount20 = (price * 20 / 100);
+	discountMinor = (price - priceDiscount20);
+	console.log(discountMinor);
+	alert(`Il prezzo del tuo biglietto con lo sconto minorenni del 20% è: ` + discountMinor.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
 
 } else if (age > 64) {
-	priceDiscount40 = (price * 20 / 100)
-	console.log(priceDiscount40);
-	alert(`Il prezzo del tuo biglietto con lo sconto over 65 del 40% è: ` + priceDiscount40.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
+	priceDiscount40 = (price * 40 / 100);
+	discountSenior = (price - priceDiscount40);
+	console.log(discountSenior);
+	alert(`Il prezzo del tuo biglietto con lo sconto over 65 del 40% è: ` + discountSenior.toFixed(2) + " \u20AC"); // 2 cifre dopo la virgola e simbolo euro
 
 } else {
 	console.log(price);
